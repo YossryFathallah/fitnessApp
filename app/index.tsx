@@ -1,11 +1,17 @@
+import { ImageBackground } from "expo-image";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text } from "react-native";
 
 const index = () => {
   return (
-    <View style={{ backgroundColor: "red", flex: 1 }}>
-      <Text>index</Text>
-    </View>
+    <ImageBackground
+      source={require("../assets/images/first.jpg")}
+      style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+    >
+      <Text style={{ color: "white", fontSize: 45, fontFamily: "regular" }}>
+        Fit Flow
+      </Text>
+    </ImageBackground>
   );
 };
 
