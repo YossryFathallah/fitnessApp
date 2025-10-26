@@ -15,22 +15,18 @@ const Index = () => {
     >
       <View style={styles.overlay} />
 
-      {/* Logo at the top */}
       <View style={styles.topArea} pointerEvents="none">
         <View style={styles.logoCircle}>
           <MaterialIcons name="fitness-center" size={18} color="#fff" />
         </View>
       </View>
 
-      {/* Center text */}
       <View style={styles.centerContent}>
         <Text style={styles.title}>FitFlow</Text>
         <Text style={styles.subtitle}>DON&apos;T QUIT STAY FIT</Text>
       </View>
 
       <View style={styles.divider} />
-
-      {/* Button */}
       <TouchableOpacity
         style={styles.cta}
         onPress={() => router.push("/login")}
@@ -46,7 +42,7 @@ export default Index;
 
 const styles = StyleSheet.create({
   background: {
-    flex: 1,
+    flex: 3,
     justifyContent: "center",
     alignItems: "center",
     position: "relative",
@@ -109,5 +105,6 @@ const styles = StyleSheet.create({
     color: "black",
     fontSize: 20,
     marginRight: 8,
+    fontWeight: "900",
   },
 });
