@@ -1,22 +1,25 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-const login = () => {
+const Login = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        position: "relative",
-        backgroundColor: "purple",
-      }}
-    >
-      <Text>login</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>Login</Text>
     </View>
   );
 };
 
-export default login;
+export default Login;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "purple",
+  },
+  text: {
+    color: "white",
+    fontSize: 24,
+  },
+});

@@ -15,26 +15,22 @@ const Index = () => {
     >
       <View style={styles.overlay} />
 
-      {/* Top logo area: small circular orange badge with a dumbbell icon */}
+      {/* Logo at the top */}
       <View style={styles.topArea} pointerEvents="none">
         <View style={styles.logoCircle}>
           <MaterialIcons name="fitness-center" size={18} color="#fff" />
         </View>
       </View>
 
+      {/* Center text */}
       <View style={styles.centerContent}>
         <Text style={styles.title}>FitFlow</Text>
-
         <Text style={styles.subtitle}>DON&apos;T QUIT STAY FIT</Text>
       </View>
-      <View
-        style={{
-          height: 2,
-          width: "60%",
-          alignSelf: "center",
-          backgroundColor: "#D0FF36",
-        }}
-      ></View>
+
+      <View style={styles.divider} />
+
+      {/* Button */}
       <TouchableOpacity
         style={styles.cta}
         onPress={() => router.push("/login")}
@@ -59,7 +55,6 @@ const styles = StyleSheet.create({
     ...StyleSheet.absoluteFillObject,
     backgroundColor: "rgba(0,0,0,0.45)",
   },
-
   topArea: {
     position: "absolute",
     top: 48,
@@ -68,7 +63,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     zIndex: 2,
   },
-
   logoCircle: {
     width: 44,
     height: 44,
@@ -77,7 +71,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-
   centerContent: {
     alignItems: "center",
     paddingHorizontal: 20,
@@ -85,23 +78,21 @@ const styles = StyleSheet.create({
   title: {
     color: "white",
     fontSize: 44,
-    fontFamily: "regular",
+    fontWeight: "700",
   },
   subtitle: {
     color: "white",
     fontSize: 20,
     letterSpacing: 1,
-    fontFamily: "regular",
     marginTop: 40,
-    marginBottom: 8,
+    marginBottom: 10,
   },
   divider: {
-    height: 3,
-    width: "55%",
+    height: 2,
+    width: "60%",
     backgroundColor: "#D0FF36",
-    marginTop: 16,
+    marginTop: 1,
   },
-  // CTA: large rounded pill that sits above the bottom of the screen
   cta: {
     position: "absolute",
     bottom: "8%",
@@ -116,8 +107,7 @@ const styles = StyleSheet.create({
   },
   ctaText: {
     color: "black",
-    fontSize: 22,
-    fontFamily: "regular",
+    fontSize: 20,
     marginRight: 8,
   },
 });
