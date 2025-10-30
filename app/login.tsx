@@ -69,7 +69,10 @@ const Login = () => {
             </TouchableOpacity>
           </View>
 
-          <TouchableOpacity style={styles.cta}>
+          <TouchableOpacity
+            style={styles.cta}
+            onPress={() => router.push("/gender")}
+          >
             <Text style={styles.ctaText}>LOGIN</Text>
             <MaterialIcons
               name="keyboard-arrow-right"
@@ -135,7 +138,7 @@ const styles = StyleSheet.create({
     right: "5%",
     height: 50,
     width: "30%",
-    backgroundColor: "#D0FF36",
+    backgroundColor: "#40E0D0",
     borderRadius: 30,
     justifyContent: "center",
     alignItems: "center",
@@ -202,6 +205,6 @@ const styles = StyleSheet.create({
     opacity: 0.8,
   },
   activeLink: {
-    color: "#D0FF36",
+    color: "#40E0D0",
   },
 });

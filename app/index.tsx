@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
   divider: {
     height: 2,
     width: "60%",
-    backgroundColor: "#D0FF36",
+    backgroundColor: "#40E0D0",
     marginTop: 1,
   },
   cta: {
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     bottom: "8%",
     height: 66,
     width: "82%",
-    backgroundColor: "#D0FF36",
+    backgroundColor: "#40E0D0",
     borderRadius: 40,
     justifyContent: "center",
     alignItems: "center",

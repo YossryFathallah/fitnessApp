@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
   },
   overlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: "rgba(0,0,0,0.45)",
+    backgroundColor: "rgba(0,0,0,0.34)",
   },
   topNavContainer: {
     position: "absolute",
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     opacity: 0.8,
   },
   activeLink: {
-    color: "#D0FF36",
+    color: "#40E0D0",
   },
   text: {
     color: "white",
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
     right: "5%",
     height: 50,
     width: "30%",
-    backgroundColor: "#D0FF36",
+    backgroundColor: "#40E0D0",
     borderRadius: 30,
     justifyContent: "center",
     alignItems: "center",
